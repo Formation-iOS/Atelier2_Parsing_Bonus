@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2D322B0B1FA9DA1F00179CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D322B0A1FA9DA1F00179CDD /* AppDelegate.swift */; };
-		2D322B0D1FA9DA1F00179CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D322B0C1FA9DA1F00179CDD /* ViewController.swift */; };
 		2D322B101FA9DA1F00179CDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D322B0E1FA9DA1F00179CDD /* Main.storyboard */; };
 		2D322B121FA9DA1F00179CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D322B111FA9DA1F00179CDD /* Assets.xcassets */; };
 		2D322B151FA9DA1F00179CDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D322B131FA9DA1F00179CDD /* LaunchScreen.storyboard */; };
+		2D322B271FA9DA9700179CDD /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D322B1D1FA9DA5800179CDD /* JSONHelper.swift */; };
+		2D322B281FA9DA9700179CDD /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D322B1E1FA9DA5800179CDD /* Movie.swift */; };
+		2D322B291FA9DA9D00179CDD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D322B201FA9DA5800179CDD /* DetailViewController.swift */; };
+		2D322B2A1FA9DAA200179CDD /* BestMovie.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D322B241FA9DA5800179CDD /* BestMovie.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D322B071FA9DA1F00179CDD /* Atelier2_Parsing_Bonus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atelier2_Parsing_Bonus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D322B0A1FA9DA1F00179CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D322B0C1FA9DA1F00179CDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D322B0F1FA9DA1F00179CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D322B111FA9DA1F00179CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D322B141FA9DA1F00179CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D322B161FA9DA1F00179CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D322B1D1FA9DA5800179CDD /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		2D322B1E1FA9DA5800179CDD /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2D322B201FA9DA5800179CDD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2D322B241FA9DA5800179CDD /* BestMovie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BestMovie.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,11 @@
 		2D322B091FA9DA1F00179CDD /* Atelier2_Parsing_Bonus */ = {
 			isa = PBXGroup;
 			children = (
+				2D322B231FA9DA5800179CDD /* Data */,
+				2D322B1C1FA9DA5800179CDD /* Model */,
+				2D322B261FA9DA5800179CDD /* Service */,
+				2D322B1F1FA9DA5800179CDD /* ViewController */,
 				2D322B0A1FA9DA1F00179CDD /* AppDelegate.swift */,
-				2D322B0C1FA9DA1F00179CDD /* ViewController.swift */,
 				2D322B0E1FA9DA1F00179CDD /* Main.storyboard */,
 				2D322B111FA9DA1F00179CDD /* Assets.xcassets */,
 				2D322B131FA9DA1F00179CDD /* LaunchScreen.storyboard */,
@@ -63,6 +72,38 @@
 			);
 			path = Atelier2_Parsing_Bonus;
 			sourceTree = "<group>";
+		};
+		2D322B1C1FA9DA5800179CDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D322B1D1FA9DA5800179CDD /* JSONHelper.swift */,
+				2D322B1E1FA9DA5800179CDD /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D322B1F1FA9DA5800179CDD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D322B201FA9DA5800179CDD /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D322B231FA9DA5800179CDD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2D322B241FA9DA5800179CDD /* BestMovie.json */,
+			);
+			path = Data;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D322B261FA9DA5800179CDD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -123,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D322B2A1FA9DAA200179CDD /* BestMovie.json in Resources */,
 				2D322B151FA9DA1F00179CDD /* LaunchScreen.storyboard in Resources */,
 				2D322B121FA9DA1F00179CDD /* Assets.xcassets in Resources */,
 				2D322B101FA9DA1F00179CDD /* Main.storyboard in Resources */,
@@ -136,8 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D322B0D1FA9DA1F00179CDD /* ViewController.swift in Sources */,
 				2D322B0B1FA9DA1F00179CDD /* AppDelegate.swift in Sources */,
+				2D322B271FA9DA9700179CDD /* JSONHelper.swift in Sources */,
+				2D322B281FA9DA9700179CDD /* Movie.swift in Sources */,
+				2D322B291FA9DA9D00179CDD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
