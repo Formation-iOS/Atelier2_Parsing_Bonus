@@ -25,7 +25,7 @@ class DetailViewController: UIViewController {
         if let movie = self.movie {
             self.descriptionLabel.text = movie.overview
             self.titleLabel.text = movie.title
-            self.notationLabel.text = "\(movie.vote_average)/10"
+            self.notationLabel.text = "\(movie.voteAverage)/10"
             self.dateLabel.text = movie.dateString
             
         }
